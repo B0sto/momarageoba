@@ -5,7 +5,7 @@ const navItems = ["About Us", "My Account", "Wishlist", "Order Tracking"];
 
 const TopBarLeft = () => {
   return (
-    <div className="flex justify-center items-center gap-x-[9px]">
+    <div className="flex justify-center items-center gap-x-[9px] font-lato">
       {navItems.map((item, index) => (
         <TopBarLink
           key={index}

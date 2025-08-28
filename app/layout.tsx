@@ -9,22 +9,93 @@ export const metadata: Metadata = {
 
 const lato = localFont({
   src: [
-    { path: "../public/fonts/Lato/Lato-Hairline.woff2", weight: "100", style: "normal" },
-    { path: "../public/fonts/Lato/Lato-HairlineItalic.woff2", weight: "100", style: "italic" },
+    {
+      path: "../public/fonts/Lato/Lato-Hairline.woff2",
+      weight: "100",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/Lato/Lato-HairlineItalic.woff2",
+      weight: "100",
+      style: "italic",
+    },
 
-    { path: "../public/fonts/Lato/Lato-Light.woff2", weight: "300", style: "normal" },
-    { path: "../public/fonts/Lato/Lato-LightItalic.woff2", weight: "300", style: "italic" },
+    {
+      path: "../public/fonts/Lato/Lato-Light.woff2",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/Lato/Lato-LightItalic.woff2",
+      weight: "300",
+      style: "italic",
+    },
 
-    { path: "../public/fonts/Lato/Lato-Regular.woff2", weight: "400", style: "normal" },
-    { path: "../public/fonts/Lato/Lato-Italic.woff2", weight: "400", style: "italic" },
+    {
+      path: "../public/fonts/Lato/Lato-Regular.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/Lato/Lato-Italic.woff2",
+      weight: "400",
+      style: "italic",
+    },
 
-    { path: "../public/fonts/Lato/Lato-Bold.woff2", weight: "700", style: "normal" },
-    { path: "../public/fonts/Lato/Lato-BoldItalic.woff2", weight: "700", style: "italic" },
+    {
+      path: "../public/fonts/Lato/Lato-Bold.woff2",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/Lato/Lato-BoldItalic.woff2",
+      weight: "700",
+      style: "italic",
+    },
 
-    { path: "../public/fonts/Lato/Lato-Black.woff2", weight: "900", style: "normal" },
-    { path: "../public/fonts/Lato/Lato-BlackItalic.woff2", weight: "900", style: "italic" },
+    {
+      path: "../public/fonts/Lato/Lato-Black.woff2",
+      weight: "900",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/Lato/Lato-BlackItalic.woff2",
+      weight: "900",
+      style: "italic",
+    },
   ],
   variable: "--font-lato",
+});
+
+export const quicksand = localFont({
+  src: [
+    {
+      path: "../public/fonts/Quicksand/Quicksand-Regular.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/Quicksand/Quicksand-Light.woff2",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/Quicksand/Quicksand-Medium.woff2",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/Quicksand/Quicksand-SemiBold.woff2",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/Quicksand/Quicksand-Bold.woff2",
+      weight: "700",
+      style: "normal",
+    },
+  ],
+  variable: "--font-quicksand",
 });
 
 export default function RootLayout({
@@ -34,7 +105,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={lato.className}>
+      <body className={`${lato.variable} ${quicksand.variable}`}>
         {children}
       </body>
     </html>
