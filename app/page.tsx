@@ -1,6 +1,7 @@
 import Header from "@/components/Organisms/Header/Header";
 import NavBar from "@/components/Organisms/NavBar/NavBar";
 import TopBar from "@/components/Organisms/TopBar/TopBar";
+import HeroSection from "@/components/Organisms/HeroSection/HeroSection";
 
 export default function Home() {
   return (
@@ -20,6 +21,12 @@ export default function Home() {
       <div className="border-b border-[#ECECEC]">
         <div className="px-[60px]">
           <NavBar />
+        </div>
+      </div>
+
+      <div className="border-b border-[#ECECEC]">
+        <div className="px-[60px]">
+          <HeroSection />
         </div>
       </div>
     </>
