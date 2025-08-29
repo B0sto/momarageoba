@@ -34,9 +34,9 @@ const HeroSlider: React.FC = () => {
         speed={500}
         onSwiper={(swiper) => {
           setTimeout(() => {
-            // @ts-ignore
+            // @ts-expect-error Swiper navigation refs
             swiper.params.navigation.prevEl = prevRef.current;
-            // @ts-ignore
+            // @ts-expect-error Swiper navigation refs
             swiper.params.navigation.nextEl = nextRef.current;
             swiper.navigation.destroy();
             swiper.navigation.init();
