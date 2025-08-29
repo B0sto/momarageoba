@@ -1,7 +1,6 @@
 // components/CategoriesDropdown.tsx
 "use client";
 import React from "react";
-import { DropdownProps } from "@/types/types";
 
 interface CategoryItem {
   label: string;
