@@ -1,3 +1,4 @@
+"use client";
 import React, { forwardRef } from "react";
 
 interface SliderButtonProps {
@@ -36,4 +37,5 @@ const SliderButton = forwardRef<HTMLButtonElement, SliderButtonProps>(
   }
 );
 
+SliderButton.displayName = "SliderButton";
 export default SliderButton;
