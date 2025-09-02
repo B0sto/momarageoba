@@ -5,7 +5,7 @@ import TopBarRight from "@/components/Molecules/TopBarRight/TopBarRight";
 
 const TopBar = () => {
   return (
-    <nav className="border-b-[1px] border-[#ECECEC] flex items-center justify-between font-lato">
+    <nav className="flex items-center justify-between font-lato">
       <TopBarLeft />
       <TopBarRight />
     </nav>

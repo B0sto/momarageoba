@@ -4,12 +4,16 @@ import Navigation from "@/components/Molecules/Navigation/Navigation";
 import HeadphonesIcon from "@/public/HeadphonesIcon";
 import React from "react";
 
-const NavBar = () => {
+const NavBar: React.FC = () => {
   return (
-    <div className="py-[14.5px] flex items-center justify-center">
+    <div className="py-3 flex justify-between items-center max-[780px]:hidden">
       <CategoriesBtn />
-      <Navigation/>
-      <SupportComponent icon={HeadphonesIcon} number="1900 - 888" text="24/7 support"/>
+      <Navigation />
+      <SupportComponent
+        icon={HeadphonesIcon}
+        number="1900 - 888"
+        text="24/7 support"
+      />
     </div>
   );
 };

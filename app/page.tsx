@@ -2,31 +2,37 @@ import Header from "@/components/Organisms/Header/Header";
 import NavBar from "@/components/Organisms/NavBar/NavBar";
 import TopBar from "@/components/Organisms/TopBar/TopBar";
 import HeroSection from "@/components/Organisms/HeroSection/HeroSection";
+import FeaturedSection from "@/components/Organisms/FeaturedSection/FeaturedSection";
 
 export default function Home() {
   return (
     <>
       <div className="border-b border-[#ECECEC]">
-        <div className="px-[60px]">
+        <div className="lg:px-[60px] md:px-[30px] sm:px-[20px] px-[10px] max-[900px]:hidden">
           <TopBar />
         </div>
       </div>
 
       <div className="border-b border-[#ECECEC]">
-        <div className="px-[60px]">
+        <div className="lg:px-[60px] md:px-[30px] sm:px-[20px] px-[10px]">
           <Header />
         </div>
       </div>
 
       <div className="border-b border-[#ECECEC]">
-        <div className="px-[60px]">
+        <div className="lg:px-[60px] md:px-[30px] sm:px-[20px] px-[10px]">
           <NavBar />
         </div>
       </div>
-
       <div className="border-b border-[#ECECEC]">
         <div className="px-[60px]">
           <HeroSection />
+        </div>
+      </div>
+      
+      <div className="border-b border-[#ECECEC]">
+        <div className="px-[60px]">
+          <FeaturedSection />
         </div>
       </div>
     </>

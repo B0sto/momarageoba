@@ -16,7 +16,7 @@ const TopBarLink: React.FC<Props> = ({ label, showSeparator, dropdownItems, onCl
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
       if (ref.current && !ref.current.contains(e.target as Node) && isOpen && onClick) {
-        onClick(); // close dropdown
+        onClick();
       }
     };
     document.addEventListener("mousedown", handleClickOutside);

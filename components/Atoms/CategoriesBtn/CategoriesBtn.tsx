@@ -82,7 +82,7 @@ const CategoriesBtn: React.FC = () => {
       >
         <CategoriesIcon className="w-6 h-6 text-white" />
         <span className="font-bold leading-[44px] ml-[7px] mr-[12px] text-white text-sm whitespace-nowrap">
-          Browse All Categories
+          All Categories
         </span>
         <BottomArrow
           className={`w-4 h-4 text-white transform transition-transform ${
