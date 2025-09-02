@@ -7,11 +7,11 @@ import FeaturedSection from "@/components/Organisms/FeaturedSection/FeaturedSect
 export default function Home() {
   return (
     <>
-      {/* <div className="border-b border-[#ECECEC]">
+      <div className="border-b border-[#ECECEC]">
         <div className="lg:px-[60px] md:px-[30px] sm:px-[20px] px-[10px] max-[900px]:hidden">
           <TopBar />
         </div>
-      </div> */}
+      </div>
 
       <div className="border-b border-[#ECECEC]">
         <div className="lg:px-[60px] md:px-[30px] sm:px-[20px] px-[10px]">
@@ -24,17 +24,17 @@ export default function Home() {
           <NavBar />
         </div>
       </div>
-      {/* <div className="border-b border-[#ECECEC]">
+      <div className="border-b border-[#ECECEC]">
         <div className="px-[60px]">
           <HeroSection />
         </div>
-      </div> */}
-      {/* 
+      </div>
+      
       <div className="border-b border-[#ECECEC]">
         <div className="px-[60px]">
           <FeaturedSection />
         </div>
-      </div> */}
+      </div>
     </>
   );
 }
