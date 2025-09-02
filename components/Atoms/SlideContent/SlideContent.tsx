@@ -14,22 +14,33 @@ const SlideContent: React.FC<SlideContentProps> = ({
   link,
   buttonText,
 }) => (
-  <div className="flex flex-col justify-center h-full py-[91px] px-[95px]">
-    <h2 className="font-quicksand text-[72px] font-bold leading-[100%] text-[#253D4E]">
-      {title.split("\n").map((line, i) => (
-        <React.Fragment key={i}>
-          {line}
-          <br />
-        </React.Fragment>
-      ))}
+  <div className="flex flex-col justify-center h-full px-3 sm:px-8 md:px-16 lg:px-24">
+    {/* Title */}
+    <h2
+      className="font-quicksand font-bold 
+      text-xl xs:text-2xl sm:text-4xl md:text-5xl lg:text-6xl 
+      leading-tight text-[#253D4E] whitespace-pre-line"
+    >
+      {title}
     </h2>
-    <p className="font-lato text-[30px] text-[#7E7E7E] leading-[80%] mt-[30px]">
+
+    {/* Description */}
+    <p
+      className="mt-2 sm:mt-6 
+      text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl 
+      text-[#7E7E7E] leading-snug"
+    >
       {description}
     </p>
-    <div className="mt-[50px]">
+
+    {/* Button */}
+    <div className="mt-4 sm:mt-8">
       <Link
         href={link}
-        className="bg-[#3BB77E] text-white font-semibold rounded-[50px] px-[40px] py-[22px] transition-all duration-300 hover:bg-[#36a670]"
+        className="bg-[#3BB77E] text-white font-semibold rounded-full 
+          px-4 py-2 text-xs 
+          sm:px-8 sm:py-3 sm:text-base 
+          transition-all duration-300 hover:bg-[#36a670]"
       >
         {buttonText}
       </Link>
