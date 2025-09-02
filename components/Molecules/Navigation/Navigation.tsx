@@ -16,7 +16,6 @@ const navItems: NavItem[] = [
   { label: "Vendors", href: "#", hasDropdown: true },
   { label: "Mega menu", href: "#", hasDropdown: true },
   { label: "Blog", href: "#", hasDropdown: true },
-  { label: "Pages", href: "#", hasDropdown: true },
   { label: "Contact", href: "#" },
 ];
 
@@ -30,7 +29,7 @@ const Navigation: React.FC = () => {
   return (
     <nav className="w-full bg-white font-quicksand">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 h-14">
-        <ul className="flex items-center gap-6 text-sm font-medium text-gray-700">
+        <ul className="flex items-center flex-wrap justify-center gap-6 text-sm font-medium text-gray-700">
           {navItems.map((item) => (
             <li key={item.label} className="relative">
               <button

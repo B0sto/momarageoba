@@ -39,7 +39,7 @@ const HeaderRight = () => {
   };
 
   return (
-    <div className="flex items-center gap-8 font-quicksand">
+    <div className="flex items-center gap-8 font-quicksand max-[500px]:flex max-[500px]:justify-center">
       {menuItems.map((item) => (
         <div key={item.key} className="relative">
           <button
@@ -51,7 +51,7 @@ const HeaderRight = () => {
             className="flex items-center gap-2 relative cursor-pointer"
           >
             <div className="relative">{item.icon}</div>
-            <span className="text-[#7E7E7E]">{item.label}</span>
+            <span className="text-[#7E7E7E] max-[1100px]:hidden">{item.label}</span>
           </button>
 
           <AnimatePresence>

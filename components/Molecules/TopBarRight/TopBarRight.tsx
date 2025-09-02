@@ -19,14 +19,14 @@ const TopBarRight = () => {
   ];
 
   return (
-    <div className="flex items-center gap-x-[9px] text-[13px] text-[#7E7E7E] leading-[13px]">
+    <div className="flex items-center gap-[9px] text-[13px] text-[#7E7E7E] leading-[13px] max-[900px]:flex-col max-[900px]:items-start">
       <span>
         Need help? Call Us:{" "}
         <a className="text-[#3BB77E] font-semibold leading-[13px]" href="tel:+1800 900">
           +1800 900
         </a>
       </span>
-      <div className="w-[1px] h-[10px] bg-[#DEDFE2]"></div>
+      <div className="w-[1px] h-[10px] bg-[#DEDFE2] max-[900px]:hidden"></div>
       
       <Dropdown
         label={selectedLang}
@@ -34,7 +34,7 @@ const TopBarRight = () => {
         isOpen={isLangOpen}
         onClick={() => setIsLangOpen(!isLangOpen)}
       />
-      <div className="w-[1px] h-[10px] bg-[#DEDFE2]"></div>
+      <div className="w-[1px] h-[10px] bg-[#DEDFE2] max-[900px]:hidden"></div>
 
       <Dropdown
         label="USD"

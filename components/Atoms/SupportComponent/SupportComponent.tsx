@@ -12,7 +12,7 @@ const SupportComponent: React.FC<SupportComponentProps> = ({
   text,
 }) => {
   return (
-    <div className="px-2 py-1 font-quicksand flex items-center gap-x-3">
+    <div className="font-quicksand flex items-center gap-x-3">
       <Icon />
       <div className="flex flex-col">
         <span className="text-lg font-medium text-green-600 whitespace-nowrap">{number}</span>
