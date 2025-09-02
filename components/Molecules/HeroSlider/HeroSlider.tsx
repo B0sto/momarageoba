@@ -25,13 +25,13 @@ const HeroSlider: React.FC = () => {
   const nextRef = useRef<HTMLButtonElement>(null);
 
   return (
-    <div className="relative w-full h-[350px] md:h-[450px] bg-green-100 rounded-2xl overflow-hidden mt-[30px]">
+    <div className="relative w-full rounded-2xl overflow-hidden bg-green-100">
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         pagination={{ clickable: true }}
-        autoplay={{ delay: 3000 }}
+        autoplay={{ delay: 3000, disableOnInteraction: false }}
         loop
-        speed={500}
+        speed={600}
         onSwiper={(swiper) => {
           setTimeout(() => {
             // @ts-expect-error Swiper navigation refs
@@ -43,7 +43,7 @@ const HeroSlider: React.FC = () => {
             swiper.navigation.update();
           }, 0);
         }}
-        className="h-full hero-swiper"
+        className="w-full aspect-[16/9] sm:aspect-[16/8] md:aspect-[16/7] lg:aspect-[16/6]"
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
@@ -52,8 +52,18 @@ const HeroSlider: React.FC = () => {
         ))}
       </Swiper>
 
-      <SliderButton ref={prevRef} direction="prev" ariaLabel="Previous slide" />
-      <SliderButton ref={nextRef} direction="next" ariaLabel="Next slide" />
+      <SliderButton
+        ref={prevRef}
+        direction="prev"
+        ariaLabel="Previous slide"
+        className="absolute top-1/2 left-1 -translate-y-1/2 z-10 sm:left-4"
+      />
+      <SliderButton
+        ref={nextRef}
+        direction="next"
+        ariaLabel="Next slide"
+        className="absolute top-1/2 right-1 -translate-y-1/2 z-10 sm:right-4"
+      />
     </div>
   );
 };

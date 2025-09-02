@@ -4,23 +4,32 @@ import React, { forwardRef } from "react";
 interface SliderButtonProps {
   direction: "prev" | "next";
   ariaLabel: string;
+  className?: string;
 }
 
 const SliderButton = forwardRef<HTMLButtonElement, SliderButtonProps>(
-  ({ direction, ariaLabel }, ref) => {
+  ({ direction, ariaLabel, className = "" }, ref) => {
     const isPrev = direction === "prev";
 
     return (
       <button
         ref={ref}
         aria-label={ariaLabel}
-        className={`group absolute top-1/2 ${
-          isPrev ? "left-5" : "right-5"
-        } -translate-y-1/2 z-10 w-[50px] h-[50px] flex items-center justify-center rounded-full bg-white shadow-md cursor-pointer transition-colors duration-300 hover:bg-[#3BB77E]`}
+        className={`
+  group absolute top-1/2 
+  ${isPrev ? "-left-2" : "-right-2"} 
+  -translate-y-1/2 z-10 
+  w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 
+  flex items-center justify-center 
+  rounded-full bg-white shadow-md cursor-pointer 
+  transition-colors duration-300 hover:bg-[#3BB77E]
+  max-[640px]:bg-transparent
+  ${className}
+`}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="w-6 h-6 text-gray-800 group-hover:text-white"
+          className="w-4 h-4 sm:w-6 sm:h-6 text-gray-800 group-hover:text-white"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"

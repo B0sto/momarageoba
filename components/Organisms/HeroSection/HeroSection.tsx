@@ -1,12 +1,11 @@
 import React from 'react'
 import HeroSlider from '@/components/Molecules/HeroSlider/HeroSlider'
 
-
 const HeroSection = () => {
   return (
-    <div>
+    <section className="py-5">
         <HeroSlider/>
-    </div>
+    </section>
   )
 }
 
