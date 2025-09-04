@@ -29,9 +29,9 @@ export default function Home() {
           <HeroSection />
         </div>
       </div>
-      
+
       <div className="border-b border-[#ECECEC]">
-        <div className="px-[60px]">
+        <div className="lg:px-[60px] md:px-[30px] sm:px-[20px] px-[10px]">
           <FeaturedSection />
         </div>
       </div>
