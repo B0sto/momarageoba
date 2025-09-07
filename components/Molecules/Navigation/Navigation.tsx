@@ -5,7 +5,7 @@ import { ChevronDown } from "lucide-react";
 interface NavItem {
   label: string;
   href?: string;
-  hasDropdown?: boolean;
+  hasDropdown?: boolean; 
 }
 
 const navItems: NavItem[] = [
