@@ -3,6 +3,7 @@ import React, { useRef, useState, useEffect } from "react";
 import { Category } from "@/lib/services/categoriesData";
 import SliderButton from "@/components/Atoms/SliderBtn/SliderBtn";
 import FeaturedCard from "@/components/Atoms/FeaturedCard/FeaturedCard";
+import SectionHeader from "@/components/Atoms/SectionHeader/SectionHeader";
 
 interface FeaturedListProps {
   categories: Category[];
@@ -67,10 +68,7 @@ const FeaturedList: React.FC<FeaturedListProps> = ({ categories }) => {
     <div>
       {/* Header with title and navigation buttons */}
       <div className="flex justify-between items-center mb-6">
-        <h2 className="font-quicksand text-[#253D4E] text-[18px] sm:text-[20px] md:text-[32px] font-bold leading-[120%]">
-          Featured Categories
-        </h2>
-
+        <SectionHeader header="Featured Categories"/>
         <div className="flex items-center gap-2">
           <div onClick={scrollLeft}>
             <SliderButton
