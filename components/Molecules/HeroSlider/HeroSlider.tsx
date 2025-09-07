@@ -43,7 +43,7 @@ const HeroSlider: React.FC = () => {
             swiper.navigation.update();
           }, 0);
         }}
-        className="w-full aspect-[16/9] sm:aspect-[16/8] md:aspect-[16/7] lg:aspect-[16/6]"
+        className="w-full aspect-[16/9] sm:aspect-[16/8] md:aspect-[16/7] lg:aspect-[16/6] hero-swiper"
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>

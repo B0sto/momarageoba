@@ -10,8 +10,8 @@
 
 /* Pagination bullets base */
 .hero-swiper .swiper-pagination-bullet {
-  width: 14px;
-  height: 14px;
+  width: 10px;
+  height: 10px;
   background: white; 
   opacity: 1;
   border: 1px solid black;
@@ -20,8 +20,8 @@
 }
 
 .hero-swiper .swiper-pagination-bullet-active {
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
 }
 
 .hero-swiper .swiper-pagination-bullet:active {
