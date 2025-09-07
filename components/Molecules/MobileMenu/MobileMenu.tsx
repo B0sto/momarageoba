@@ -7,6 +7,7 @@ import HeaderRight from "@/components/Molecules/HeaderRight/HeaderRight";
 import TopBarRight from "@/components/Molecules/TopBarRight/TopBarRight";
 import Dropdown from "@/components/Atoms/Dropdown/Dropdown";
 import { DropdownItem } from "@/types/types";
+import CategoriesBtn from "@/components/Atoms/CategoriesBtn/CategoriesBtn";
 
 interface MobileMenuProps {
   isOpen: boolean;
@@ -101,9 +102,8 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
 
         <div className="flex-1 overflow-y-auto px-5 py-6 space-y-6">
           <SearchBar />
-
+          <CategoriesBtn/>
           <HeaderRight />
-
           <TopBarRight />
 
           <nav className="flex flex-col divide-y divide-gray-100 text-[15px] font-medium text-gray-700">

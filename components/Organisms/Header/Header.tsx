@@ -13,7 +13,7 @@ const Header = () => {
     <header className="flex items-center justify-between py-[25px] max-[900px]:py-[15px] relative">
       <Logo />
 
-      <div className="hidden min-[780px]:flex items-center gap-6 w-full">
+      <div className="hidden min-[780px]:flex items-center justify-between gap-6 w-full">
         <SearchBar />
         <HeaderRight />
       </div>
