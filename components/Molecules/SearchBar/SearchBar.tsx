@@ -38,7 +38,7 @@ export const SearchBar = () => {
         rounded-lg border border-green-300 bg-white shadow-sm
         focus-within:ring-2 focus-within:ring-green-200
         p-2 sm:p-2 md:p-3 lg:p-4
-        w-full
+        w-full max-w-[700px] ml-9 max-[900px]:ml-0
       "
     >
       {/* Category dropdown */}

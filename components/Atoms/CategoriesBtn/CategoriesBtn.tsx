@@ -75,20 +75,22 @@ const CategoriesBtn: React.FC = () => {
   ];
 
   return (
-    <div className="relative inline-block">
+    <div className="relative">
       <div
-        className=" bg-[#3BB77E] rounded-[5px] px-[20px] font-quicksand flex justify-center items-center w-fit text-white cursor-pointer hover:bg-[#34a16f] transition-colors duration-200"
+        className=" bg-[#3BB77E] rounded-[5px] px-[20px] font-quicksand justify-center flex items-center w-fit text-white cursor-pointer hover:bg-[#34a16f] transition-colors duration-200 max-[900px]:px-[10px] max-[900px]:w-full"
         onClick={handleToggle}
       >
-        <CategoriesIcon className="w-6 h-6 text-white" />
-        <span className="font-bold leading-[44px] ml-[7px] mr-[12px] text-white text-sm whitespace-nowrap">
+        <CategoriesIcon className="size-6 max-[900px]:size-5" />
+        <span className="font-bold leading-[44px] px-[7px] text-sm whitespace-nowrap max-[900px]:text-[12px]">
           All Categories
         </span>
-        <BottomArrow
-          className={`w-4 h-4 text-white transform transition-transform ${
-            isOpen ? "rotate-180" : ""
-          }`}
-        />
+        <div className="flex justify-center items-center">
+          <BottomArrow
+            className={`w-4 h-4 origin-center transform transition-transform ${
+              isOpen ? "rotate-180" : ""
+            }`}
+          />
+        </div>
       </div>
 
       <CategoriesDropdown items={categories} isOpen={isOpen} />
