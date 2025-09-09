@@ -16,7 +16,7 @@ const FeaturedSection = async () => {
   );
 
   return (
-    <section className='py-5'>
+    <section className='pt-10'>
       <FeaturedList categories={categoriesWithTotal} />
     </section>
   );

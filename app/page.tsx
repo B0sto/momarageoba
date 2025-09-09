@@ -5,6 +5,7 @@ import HeroSection from "@/components/Organisms/HeroSection/HeroSection";
 import FeaturedSection from "@/components/Organisms/FeaturedSection/FeaturedSection";
 import PopularProducts from "@/components/Organisms/PopularProducts/PopularProducts";
 import OfferSection from "@/components/Organisms/OfferSection/OfferSection";
+import Footer from "@/components/Organisms/Footer/Footer";
 
 export default function Home() {
   return (
@@ -40,6 +41,10 @@ export default function Home() {
 
       <div className="lg:px-[60px] md:px-[30px] sm:px-[20px] px-[10px]">
         <OfferSection />
+      </div>
+
+      <div className="lg:px-[60px] md:px-[30px] sm:px-[20px] px-[10px]">
+        <Footer />
       </div>
     </>
   );

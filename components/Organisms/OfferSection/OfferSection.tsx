@@ -45,7 +45,7 @@ const OfferSection = () => {
   ];
 
   return (
-    <section className="py-8 px-4 sm:px-6 lg:px-8 relative">
+    <section className="pt-10 px-4 sm:px-6 lg:px-8 relative">
       <Swiper
         modules={[Navigation]}
         spaceBetween={16}
@@ -64,9 +64,7 @@ const OfferSection = () => {
           }
         }}
         onSlideChange={(swiper) => {
-          // Disable prev button if at beginning
           setCanScrollLeft(!swiper.isBeginning);
-          // Disable next button if at end
           setCanScrollRight(!swiper.isEnd);
         }}
         breakpoints={{
@@ -87,7 +85,6 @@ const OfferSection = () => {
           </SwiperSlide>
         ))}
 
-        {/* Prev button */}
         <SliderButton
           ref={prevRef}
           direction="prev"
@@ -97,7 +94,6 @@ const OfferSection = () => {
           }`}
         />
 
-        {/* Next button */}
         <SliderButton
           ref={nextRef}
           direction="next"

@@ -3,7 +3,7 @@ import HeroSlider from '@/components/Molecules/HeroSlider/HeroSlider'
 
 const HeroSection = () => {
   return (
-    <section className="py-5">
+    <section className="pt-10">
         <HeroSlider/>
     </section>
   )
