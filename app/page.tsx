@@ -6,6 +6,7 @@ import FeaturedSection from "@/components/Organisms/FeaturedSection/FeaturedSect
 import PopularProducts from "@/components/Organisms/PopularProducts/PopularProducts";
 import OfferSection from "@/components/Organisms/OfferSection/OfferSection";
 import Footer from "@/components/Organisms/Footer/Footer";
+import MobileDock from "@/components/Atoms/MobileDock/MobileDock";
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
           <NavBar />
         </div>
       </div>
+
       <div className="lg:px-[60px] md:px-[30px] sm:px-[20px] px-[10px]">
         <HeroSection />
       </div>
@@ -45,6 +47,10 @@ export default function Home() {
 
       <div className="lg:px-[60px] md:px-[30px] sm:px-[20px] px-[10px]">
         <Footer />
+      </div>
+
+      <div className="block md:hidden">
+        <MobileDock />
       </div>
     </>
   );
