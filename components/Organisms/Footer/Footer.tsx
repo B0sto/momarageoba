@@ -55,7 +55,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="pt-10 pb-2 flex flex-col gap-y-12">
+    <footer className="pt-10 pb-2 flex flex-col gap-y-12 max-[768px]:pb-14">
       <div className="flex gap-y-6 gap-x-6 justify-between max-lg:flex-col">
         <ContactInfoBlock />
         {footerNavBlocks.map((block, index) => (
