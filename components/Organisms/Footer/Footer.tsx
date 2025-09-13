@@ -1,10 +1,21 @@
-import CompanyBlock from "@/components/Molecules/CompanyBlock/CompanyBlock";
 import ContactInfoBlock from "@/components/Molecules/ContactInfoBlock/ContactInfoBlock";
 import FooterNavBlock from "@/components/Molecules/FooterNavBlock/FooterNavBlock";
 import SupportBlock from "@/components/Molecules/SupportBlock/SupportBlock";
 
 const Footer = () => {
   const footerNavBlocks = [
+    {
+      title: "Company",
+      items: [
+        "About Us",
+        "Delivery Information",
+        "Privacy Policy",
+        "Terms & Conditions",
+        "Contact Us",
+        "Support Center",
+        "Careers",
+      ],
+    },
     {
       title: "Account",
       items: [
@@ -45,10 +56,8 @@ const Footer = () => {
 
   return (
     <footer className="pt-10 pb-2 flex flex-col gap-y-12">
-      <div className="flex justify-between">
+      <div className="flex gap-y-6 gap-x-6 justify-between max-lg:flex-col">
         <ContactInfoBlock />
-        <CompanyBlock />
-
         {footerNavBlocks.map((block, index) => (
           <FooterNavBlock key={index} title={block.title} items={block.items} />
         ))}

@@ -33,16 +33,16 @@ const SupportBlock = () => {
   ];
 
   return (
-    <div className="border-t border-[#BCE3C9] flex justify-between py-8">
-      <div className="font-lato text-[14px] leading-[24px] text-[#7E7E7E]">
+    <div className="border-t border-[#BCE3C9] flex items-center justify-between max-lg:flex-col max-lg:justfiy-center gap-5 py-8">
+      <div className="font-lato text-[14px] leading-[24px] text-[#7E7E7E] text-center">
         <p>
           © 2022, <span className="text-[#3BB77E]">Nest</span> - HTML Ecommerce
           Template
         </p>
-        <span className="">All rights reserved</span>
+        <span>All rights reserved</span>
       </div>
 
-      <div className="flex items-center gap-x-12">
+      <div className="flex items-center gap-x-12 max-[600px]:flex-col">
         {supportCompItems.map((item, index) => (
           <SupportComponent key={index} {...item} />
         ))}

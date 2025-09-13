@@ -30,7 +30,7 @@ const ContactInfoBlock = () => {
   ];
 
   return (
-    <div className="space-y-4">
+    <div className="space-y-4 max-lg:hidden">
       <Logo />
       <p className="font-lato text-[17px] text-[#253D4E] leading-[24px] max-w-[238px]">
         Awesome grocery store website template
