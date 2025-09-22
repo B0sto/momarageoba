@@ -7,6 +7,7 @@ import PopularProducts from "@/components/Organisms/PopularProducts/PopularProdu
 import OfferSection from "@/components/Organisms/OfferSection/OfferSection";
 import Footer from "@/components/Organisms/Footer/Footer";
 import MobileDock from "@/components/Atoms/MobileDock/MobileDock";
+import AdCardsSection from "@/components/Organisms/AdCardsSection/AdCardsSection";
 
 export default function Home() {
   return (
@@ -35,6 +36,10 @@ export default function Home() {
 
       <div className="lg:px-[60px] md:px-[30px] sm:px-[20px] px-[10px]">
         <FeaturedSection />
+      </div>
+
+      <div className="lg:px-[60px] md:px-[30px] sm:px-[20px] px-[10px]">
+        <AdCardsSection />
       </div>
 
       <div className="lg:px-[60px] md:px-[30px] sm:px-[20px] px-[10px]">
