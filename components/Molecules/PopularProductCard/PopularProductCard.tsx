@@ -19,7 +19,6 @@ const PopularProductCard = ({
   return (
     <div className="w-full">
       {" "}
-      {/* Single parent div to wrap all content */}
       <Link
         href={`/product/${encodeURIComponent(title)}`}
         className="block md:hidden"
@@ -95,7 +94,7 @@ const PopularProductCard = ({
             )}
           </div>
 
-          <div className="absolute inset-0 bg-green-50/10 backdrop-blur-xs opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
+          <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
             <AddToCartBtn />
             <Link href={`/product/${encodeURIComponent(title)}`}>
               <ViewProductBtn />
