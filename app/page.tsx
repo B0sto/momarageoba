@@ -8,6 +8,7 @@ import OfferSection from "@/components/Organisms/OfferSection/OfferSection";
 import Footer from "@/components/Organisms/Footer/Footer";
 import MobileDock from "@/components/Atoms/MobileDock/MobileDock";
 import AdCardsSection from "@/components/Organisms/AdCardsSection/AdCardsSection";
+import VendoresSection from "@/components/Organisms/VendoresSection/VendoresSection";
 
 export default function Home() {
   return (
@@ -40,6 +41,10 @@ export default function Home() {
 
       <div className="lg:px-[60px] md:px-[30px] sm:px-[20px] px-[10px]">
         <AdCardsSection />
+      </div>
+
+      <div className="lg:px-[60px] md:px-[30px] sm:px-[20px] px-[10px]">
+        <VendoresSection />
       </div>
 
       <div className="lg:px-[60px] md:px-[30px] sm:px-[20px] px-[10px]">
